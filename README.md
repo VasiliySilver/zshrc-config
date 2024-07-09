@@ -51,10 +51,12 @@ source ~/.zshrc
 
 ### Step 4: Download and Install the MesloLGS NF Fonts
 Download the required font files from the provided URLs:
+```bash
 wget https://github.com/VasiliySilver/zshrc-config/blob/main/MesloLGS%20NF%20Bold%20Italic.ttf
 wget https://github.com/VasiliySilver/zshrc-config/blob/main/MesloLGS%20NF%20Bold.ttf
 wget https://github.com/VasiliySilver/zshrc-config/blob/main/MesloLGS%20NF%20Italic.ttf
 wget https://github.com/VasiliySilver/zshrc-config/blob/main/MesloLGS%20NF%20Regular.ttf
+```
 
 Install the downloaded font files on your Ubuntu system. You can do this by double-clicking each font file and following the on-screen instructions to install them.
 
