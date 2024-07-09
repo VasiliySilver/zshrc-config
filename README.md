@@ -39,12 +39,15 @@
    source ~/.zshrc
    ```
 
-### Step 3: Install Neovim (nvim)
+Step 3: Install Neovim (nvim) and Your Custom Configuration
+Install Neovim using your package manager. For example, on Ubuntu:
+sudo apt-get install neovim git
 
-1. Install Neovim, a modern and extensible text editor, using your package manager. For example, on Ubuntu:
-   ```
-   sudo apt-get install neovim
-   ```
+Clone your custom Neovim configuration repository:
+git clone https://github.com/VasiliySilver/nvim.nchad.git ~/.config/nvim
+
+Reload your ZSH configuration:
+source ~/.zshrc
 
 ### Step 4: Install pyenv and pyenv-virtualenv
 
