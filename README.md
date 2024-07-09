@@ -49,7 +49,23 @@ git clone https://github.com/VasiliySilver/nvim.nchad.git ~/.config/nvim
 Reload your ZSH configuration:
 source ~/.zshrc
 
-### Step 4: Install pyenv and pyenv-virtualenv
+### Step 4: Download and Install the MesloLGS NF Fonts
+Download the required font files from the provided URLs:
+wget https://github.com/VasiliySilver/zshrc-config/blob/main/MesloLGS%20NF%20Bold%20Italic.ttf
+wget https://github.com/VasiliySilver/zshrc-config/blob/main/MesloLGS%20NF%20Bold.ttf
+wget https://github.com/VasiliySilver/zshrc-config/blob/main/MesloLGS%20NF%20Italic.ttf
+wget https://github.com/VasiliySilver/zshrc-config/blob/main/MesloLGS%20NF%20Regular.ttf
+
+Install the downloaded font files on your Ubuntu system. You can do this by double-clicking each font file and following the on-screen instructions to install them.
+
+### Step 5: Change the Terminal Font
+1. Open your terminal emulator (e.g., GNOME Terminal, Konsole, etc.).
+2. Go to the settings or preferences of your terminal.
+3. Locate the "Font" or "Text" settings.
+4. Select the "MesloLGS NF" font family.
+5. Apply the changes and close the terminal settings.
+
+### Step 6: Install pyenv and pyenv-virtualenv
 
 1. Install the necessary dependencies for pyenv:
    ```
@@ -85,7 +101,7 @@ source ~/.zshrc
    source ~/.zshrc
    ```
 
-### Step 5: Install zoxide
+### Step 7: Install zoxide
 
 1. Install zoxide, a fast alternative to the built-in `cd` command:
    ```
@@ -100,7 +116,7 @@ source ~/.zshrc
    source ~/.zshrc
    ```
 
-### Step 6: Install NVM (Node Version Manager)
+### Step 8: Install NVM (Node Version Manager)
 
 1. Install NVM using the following commands:
    ```
