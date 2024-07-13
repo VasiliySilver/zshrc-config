@@ -59,7 +59,6 @@ alias la='ls -la --color'
 alias note=nvim $(date +'%Y-%m-%d__%H-%M-%S').md
 alias vi=nvim
 
-
 # Shell integration
 # Set up fzf key bindings and fuzzy completion
 [ -f /usr/share/doc/fzf/examples/key-bindings.zsh ] && source /usr/share/doc/fzf/examples/key-bindings.zsh
@@ -69,3 +68,17 @@ alias vi=nvim
 source <(zoxide init zsh)
 alias cd=z
 alias cdi=zi
+
+# Check if instant prompt is enabled
+if [[ -n "$POWERLEVEL9K_INSTANT_PROMPT" ]]; then
+  # Code that performs console I/O (e.g., pyenv and nvm initialization) goes here
+  export NVM_DIR="$HOME/.nvm"
+  [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+  [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+fi
+
+export PYENV_ROOT="$HOME/.pyenv"
+[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+
+eval "$(pyenv virtualenv-init -)"
